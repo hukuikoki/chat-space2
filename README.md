@@ -4,7 +4,7 @@
 |:-----|:-----|
 |name  |string|
 
-###アソシエーション
+### アソシエーション
 has\_many :messages
 has\_and\_belongs\_to\_many :groups
 
@@ -13,7 +13,7 @@ has\_and\_belongs\_to\_many :groups
 |:-----|:-----|
 |name  |string|
 
-###アソシエーション
+### アソシエーション
 has\_many :massages
 has\_and\_belongs\_to\_many :users
 
@@ -23,7 +23,7 @@ has\_and\_belongs\_to\_many :users
 |user\_id |references|
 |group\_id|references|
 
-###Massage
+### Massage
 |column   |type      |
 |:--------|:---------|
 |body     |text      |
@@ -31,7 +31,7 @@ has\_and\_belongs\_to\_many :users
 |user\_id |references|
 |group\_id|references|
 
-###アソシエーション
+### アソシエーション
 belongs\_to :user
 belongs\_to :group
 
