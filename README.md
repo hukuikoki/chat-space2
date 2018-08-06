@@ -6,6 +6,7 @@
 
 ### アソシエーション
 has\_many :messages
+
 has\_and\_belongs\_to\_many :groups
 
 ## Group
@@ -15,6 +16,7 @@ has\_and\_belongs\_to\_many :groups
 
 ### アソシエーション
 has\_many :massages
+
 has\_and\_belongs\_to\_many :users
 
 ## Group\_Users
@@ -33,6 +35,7 @@ has\_and\_belongs\_to\_many :users
 
 ### アソシエーション
 belongs\_to :user
+
 belongs\_to :group
 
 
