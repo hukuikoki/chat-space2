@@ -1,0 +1,20 @@
+.chat
+  =render 'layouts/sidebar'
+  .chat-main
+    .chat-header.clearfix
+      .chat-header--left
+        %h2 イケイケ
+        %p.chat-header__users
+          Members:
+          %span.chat-header__user 福井洸希
+      .chat-header--right
+        = link_to 'Edit', '#', class: 'chat-header__edit-btn'
+    .chat-body
+      %ul.chat-messages
+        =render 'messages/message'
+    .chat-footer.clearfix
+      %input{placeholder: 'type a message', class: 'textarea form_message'}/
+      %label.form__mask
+        .fa.fa-image
+        %input{type: 'file', class: 'message_image'}
+      %input{type: 'submit', class: 'submit-save'}
