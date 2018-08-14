@@ -1,5 +1,3 @@
 .flash-messages
-  %p.flash-messages__notice
-    チャットグループが作成されました。
-  %p.flash-messages__alert
-    = alert
+  - flash.each do |key, value|
+    = content_tag :div, value, class: key
