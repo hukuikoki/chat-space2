@@ -1,9 +1,10 @@
 .chat-side
   .chat-user.clearfix
-    %h5 福井洸希
+    %h5
+      = current_user.name
     .chat-user__actions
       = link_to '#', class: 'chat-user__action' do
         %i.fa.fa-pencil-square-o
-      = link_to '#', class: 'chat-user__action' do
+      = link_to edit_user_path(current_user), class: 'chat-user__action' do
         %i.fa.fa-cog
   = render '/layouts/sidebar/group'
